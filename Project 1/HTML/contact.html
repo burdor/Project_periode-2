@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+     <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation">
+        <img src="IMG/IMG.jpg" class="logo" alt="Logo"> 
+        <a class="navclass" href="hoofdpagina.html">Home</a>
+        <a class="navclass" href="contact.html">Contact </a>
+        <a class="navclass" href="OverMij.html">Over mij</a>
+        <a class="navclass" href="Openingstijden.html">Openingstijden</a>
+    </nav>
+    <main>
+    
+    <section class="Header">
+        <h1>Neem contact op</h1>
+        <p>Vul het formulier in om een vraag of opmerking door te geven.
+        </p>
+    </section>
+    <section>
+        <form class="contact" action="mailto:9027876@student.zadkine.nl" method="post" enctype="text/plain">
+            <fieldset>
+                <legend id="legend">Contact</legend>
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required placeholder="verplicht veld">
+            <br>
+            <label for="email">E-mailadres:</label>
+            <input type="email" id="email" name="email" required placeholder="verplicht veld">
+            <br>
+            <label for="bericht">Bericht:</label>
+            <textarea id="bericht" name="bericht" required placeholder="verplicht veld" ></textarea>
+            <br>
+            <input type="submit" name="Verzend">
+            </fieldset>
+        </form>
+    </section>
+    </main>
+     <footer>
+     <section>
+        <div class="footer-left">
+            <p><a href="contact.html">Contact</a></p>
+            <div class="footer-bottom">
+                <p><a href="OverMij.html">Over mij</a></p>
+                <p>Copyright © 2026 Doruk Gedik</p>
+            </div>
+        </div>
+     </section>
+    </footer>   
+</body>
+</html>

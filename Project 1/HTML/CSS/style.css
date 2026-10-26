@@ -1,0 +1,249 @@
+:root {
+    --hoofdkleur: #bdb76b;
+    --main: #d8dbd8;    
+}
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: left;
+    margin-bottom: 25px;
+    padding: 25px;
+    background: var(--hoofdkleur);  
+}
+nav a {
+    &:hover {
+        color: darkblue;   
+            }
+    color: blue;
+    display:flex;
+    font-size: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-right: 20px;
+    background: var(--main);
+    border: 1px solid var(--main);
+    border-radius: 12px;
+    padding: 10px;  
+}
+.logo {
+    display: flex;
+    justify-content: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    object-fit: fill;
+    border-radius: 50%; 
+}
+section.Main {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+
+}
+.sectionh1 {
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+.Left {
+    background-color: var(--blocks);
+    width: 49%; 
+}
+.sidebar {
+    margin-left: auto;
+    width: 50%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    box-sizing: border-box;    
+}
+.sidebar > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;   
+}
+footer {
+    position: sticky;
+    bottom: 0;
+    margin-top: 25px;
+    background: var(--hoofdkleur);  
+}
+footer > section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px;    
+}  
+footer p {
+    margin: 0;
+    padding: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+}       
+.footer-left {
+    width: 100%;
+    margin-bottom: 0px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    text-align: center;
+}
+item {
+    background: linear-gradient(to right, darkgray, darkgray);
+    border-radius: 20px;
+    margin: 0px;
+    align-items: center;
+}
+item > img {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    object-fit: fill;
+}
+item > h1 {
+    margin: 0px;
+}
+item > p {
+    margin: 0px;
+}
+main {
+    background-color: var(--main);
+}
+.Header {
+    text-align: center;
+}
+.contact {
+    width: fit-content;
+    margin-inline: auto;
+    text-align: left;
+    position: relative;  
+    bottom: 10px;          
+}
+.contact label {
+    display: inline-block;
+    width: 120px;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    box-sizing: border-box;
+    width: min(240px, 55vw);
+}
+.contact textarea {
+    height: 100px;  
+    vertical-align: top;
+}
+#naam,
+#email,
+#bericht {
+    border-radius: 3px;
+    background: white;
+    border: 1px solid lightgray;
+}
+.openingstijden {
+    border: 3px solid black;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: left;
+}
+.TH {
+    text-align: center;
+}
+.Header > h1 {
+ margin-bottom: 0px;
+}
+.Header > p {
+    margin-top: 0px;
+}
+#legend {
+    width: fit-content;
+    text-align: center; 
+}
+@media (max-width: 1000px) {
+.navigation {
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    & a {
+        margin: auto;
+        justify-content: right;
+        flex-wrap: wrap;
+        }
+}
+.openingstijden{
+    width: min(100%, 420px);
+    height: auto;
+}
+container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 0;
+    padding: auto;
+    align-items: center;
+}
+footer {
+    position: relative;
+}
+}
+@media (max-width: 376px) and (min-width: 374px) {
+    .navclass {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: auto;
+    height: auto;
+    gap: 3px;
+    margin-right: auto;
+    }
+    .navigation {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+        & > img {
+        margin-left: auto;
+    }
+}   
+}
+@media (max-width: 1000px) and (min-width: 500px) {
+container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+    align-items: stretch;
+}
+item {
+    background: linear-gradient(to right, darkgray, darkgray);
+    border-radius: 20px;
+    margin: 0px;
+    align-items: center;
+}
+item > img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    object-fit: fill;
+}
+}
+#bericht {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    }
